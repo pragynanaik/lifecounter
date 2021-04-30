@@ -14,10 +14,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var Player3Total: UILabel!
     @IBOutlet weak var Player4Total: UILabel!
     @IBOutlet weak var loser: UILabel!
+    @IBOutlet weak var Paired1: UIButton!
+    
+    @IBOutlet weak var pairedButton: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
+    }
+    
+    
+    
+    func changeValue(val: Int, target: Int, player: Int) {
+        let lifeTotal = Int()
+        let newTotal = lifeTotal + val
+        
     }
     
     func changeValue(val: Int, target: Int) {
@@ -62,6 +74,11 @@ class ViewController: UIViewController {
     
     }
     
+    }
+    
+    @IBAction func changeFive(_ sender: UIButton) {
+        changeValue(val: -2, target:1)
+
     }
 
     @IBAction func OneNegFive(_ sender: Any) {

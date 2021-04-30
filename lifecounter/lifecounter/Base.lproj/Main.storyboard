@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GI5-vj-zyj">
-                                <rect key="frame" x="5" y="366" width="93" height="47"/>
+                                <rect key="frame" x="5" y="362" width="93" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-5"/>
                                 <connections>
@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5N-Fz-Lgo">
-                                <rect key="frame" x="165" y="201" width="94" height="54"/>
+                                <rect key="frame" x="202" y="219" width="94" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
                                 <connections>
@@ -71,13 +71,14 @@
                                     <action selector="TwoPos5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IqR-kb-bqJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Mq4-MY-PgT">
-                                <rect key="frame" x="238" y="201" width="93" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Mq4-MY-PgT">
+                                <rect key="frame" x="123" y="219" width="59" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+5"/>
+                                <state key="normal" title="+"/>
                                 <connections>
                                     <action selector="OnePos5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thj-vR-2tm"/>
                                     <action selector="TwoPos5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWu-oz-oxF"/>
+                                    <action selector="changeFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arI-3M-Hrb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISD-CQ-vzb">
@@ -158,7 +159,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqs-Cv-7Mh">
-                                <rect key="frame" x="351" y="217" width="29" height="21"/>
+                                <rect key="frame" x="339" y="214" width="29" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -179,22 +180,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIG-NH-Klg">
-                                <rect key="frame" x="350" y="655" width="30" height="37"/>
+                                <rect key="frame" x="349" y="655" width="30" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYP-NU-xYB">
-                                <rect key="frame" x="5" y="201" width="94" height="54"/>
+                                <rect key="frame" x="100" y="168" width="94" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="-5"/>
+                                <state key="normal" title="-"/>
                                 <connections>
                                     <action selector="OneNegFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Btr-v6-y37"/>
+                                    <action selector="changeFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYH-FB-hry"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNz-XI-fsv">
-                                <rect key="frame" x="90" y="200" width="93" height="54"/>
+                                <rect key="frame" x="202" y="168" width="93" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-"/>
                                 <connections>
@@ -202,7 +204,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AfX-xf-Vqc">
-                                <rect key="frame" x="314" y="135" width="80" height="21"/>
+                                <rect key="frame" x="313" y="135" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="zHW-hW-AhI"/>
@@ -219,6 +221,19 @@
                                     <action selector="FourNeg5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFC-WU-4uy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6SH-fQ-J15">
+                                <rect key="frame" x="160" y="81" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Player"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xT1-TS-Soi">
+                                <rect key="frame" x="63" y="192" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -229,11 +244,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Paired1" destination="dYP-NU-xYB" id="Kjh-fs-zmw"/>
                         <outlet property="Player1Total" destination="kqs-Cv-7Mh" id="PVF-ji-Dfz"/>
                         <outlet property="Player2Total" destination="dgx-n7-Azy" id="n0J-Ks-s91"/>
                         <outlet property="Player3Total" destination="9Ko-XS-s0t" id="7AA-ES-uoV"/>
                         <outlet property="Player4Total" destination="CIG-NH-Klg" id="kgd-U9-LUy"/>
                         <outlet property="loser" destination="wIP-6I-noi" id="p3w-B0-SRP"/>
+                        <outlet property="pairedButton" destination="xT1-TS-Soi" id="RR5-3j-pv9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
